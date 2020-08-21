@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repairs</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon//site.webmanifest">
+    <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff"> -->
+    
+</head>
+<body>
+    <!-- после доделки секции заменяем цвета переменными -->
+
+    <!-- svg sprites -->
+    <!-- <svg display='none'>
+        <symbol id="fasebook" viewBox="0 0 8 18">
+            <g>
+                <path d="M8 5.829H5.276V3.96c0-.701.444-.865.757-.865h1.923V.011L5.308 0C2.368 0 1.7 2.3 1.7 3.773v2.056H0v3.178h1.7V18h3.576V9.007h2.412z"/>
+            </g>
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 20 14">
+            <g><path d="M15.998 2.283c-.013-.007-.025-.02-.038-.033a3.64 3.64 0 0 0-2.637-.939l-.031-.068c.006-.006.012-.006.018-.006.917-.199 1.46-.403 1.621-.625.057-.179-.011-.278-.211-.303A5.477 5.477 0 0 0 13.454.6c.48-.29.667-.494.561-.6-.474.012-.985.242-1.522.693.2-.322.275-.495.225-.526-.255.167-.48.347-.673.538-.406.427-.73.822-.98 1.182l-.011.03c-.642.983-1.091 1.972-1.36 2.98l-.1.076-.018.017a5.023 5.023 0 0 0-1.402-1.15 16.913 16.913 0 0 0-2.307-1.156c-.967-.47-1.946-.86-2.937-1.162-.006 1.045.536 1.879 1.615 2.485v.019a3.62 3.62 0 0 0-1.104.155c.069.97.798 1.638 2.182 2.009l-.006.018c-.542-.03-.991.15-1.34.52.455.841 1.26 1.243 2.425 1.212-.23.111-.411.234-.53.371-.212.21-.28.458-.212.742.25.427.698.624 1.36.594l.037.043-.019.018c-1.141 1.114-2.519 1.614-4.134 1.51l-.025.012c-.984-.007-2.038-.451-3.179-1.342 1.147 1.558 2.668 2.683 4.551 3.389 2.157.674 4.315.723 6.465.147h.038c2.088-.569 3.859-1.737 5.317-3.505.674-.928 1.098-1.811 1.266-2.66 1.091.038 1.877-.26 2.363-.89l-.012-.018c-.362.123-1.073.087-2.127-.117v-.112c0-.006 0-.006.007 0 1.154-.124 1.833-.475 2.051-1.058a3.4 3.4 0 0 1-2.382.025c-.143-1.026-.654-1.96-1.54-2.806z"/></g>
+        </symbol>
+
+        <symbol id="inkin" viewBox="0 0 16 16">
+            <g><path d="M8.588 7.217l.016-.025v.025zM16 1.147v13.707c0 .632-.53 1.146-1.183 1.146H1.182C.529 16 0 15.486 0 14.854V1.146C0 .513.53 0 1.182 0h13.635C15.471 0 16 .513 16 1.146zM4.85 6.168H2.433v7.224H4.85zm.159-2.235c-.016-.709-.525-1.248-1.352-1.248-.826 0-1.367.54-1.367 1.248 0 .694.525 1.248 1.336 1.248h.016c.842 0 1.367-.554 1.367-1.248zm8.555 5.317c0-2.22-1.192-3.252-2.782-3.252-1.283 0-1.857.7-2.178 1.193V6.169H6.187c.032.677 0 7.224 0 7.224h2.417V9.36c0-.216.015-.432.08-.586.174-.432.572-.878 1.24-.878.874 0 1.223.662 1.223 1.633v3.865h2.417z"/></g>
+        </symbol>
+    </svg> -->
+    
+    <div class="wrapper">
+
+        
+
+        <div class="start ibg">
+            <img class="ibg__img" src="img/bg/start.jpg" alt="">
+
+            <header class="header">
+                <div class='header__container'>
+                    <div class="header__row">
+                        <div class="header__column _anim-show">
+                            <div class="header__logo logo">
+                                <div class="logo__img">
+                                    <img src="img/logo/logo.png" alt="">
+                                </div>
+                                <div class="logo__name">
+                                    Ремонт <br>
+                                    Полов 24
+                                </div>
+                            </div>
+                            <div class="header__addres-text">
+                                Ремонт и монтаж полов под ключ
+                                в Н.Новгороде и области
+                            </div>
+                            <a class="header__inf inf-header header__inf_a">
+                                <div class="inf-header__laible">
+                                    <img src="img/icons/metca.png" alt="">
+                                </div>
+                                <address class="inf-header__addres">г.Нижний Новгород. <br>
+                                    ул.Петровского, 23
+                                </address>
+                            </a>
+    
+                            <a class="header__inf inf-header">
+                                <div class="inf-header__laible">
+                                    <img src="img/icons/modaile.png" alt="">
+                                </div>
+                                <address class="inf-header__addres">Написать <br>
+                                    в Viber- чат
+                                </address>
+                            </a>
+    
+                            <a class="header__phone phon-head">
+                                <div href="#" class="phon-head__tell">+7 (831) 415 - 41 - 84
+                                </div>
+                                <div class="phon-head__order">Заказать звонок</div>
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+            </header>
+            
+
+            <div class='container'>
+                <div class="start__main-inf _anim-show">
+                    <div class="start__exemple _anim-show">
+                        <img src="img/start/example.png" alt="example">
+                    </div>
+                    <div class="start__top">
+                        <h1 class="start__title _anim-show">Ремонт и монтаж полов</h1>
+                        <h2 class="start__subtitle _anim-show">Любой сложности для физических 
+                        и юридических лиц</h2>
+                    </div>
+                    <div class="start__bottom _anim-show">
+                        <div class="start__lable-inf inf-lable">
+                            <div class="inf-lable__item">
+                                <a href="#" class="inf-lable__link">
+                                    <div class="inf-lable__wave">
+                                        <div class="inf-lable__plus">
+                                        </div>
+                                    </div>
+                                    <div class="inf-lable__text">От 180 руб./ м2</div>
+                                </a>
+                            </div>
+                            <div class="inf-lable__item">
+                                <a href="#" class="inf-lable__link">
+                                    <div class="inf-lable__wave">
+                                        <div class="inf-lable__plus">
+                                        </div>
+                                    </div>
+                                    <div class="inf-lable__text">Все работы под ключ</div>
+                                </a>
+                            </div>
+                            <div class="inf-lable__item">
+                                <a href="#" class="inf-lable__link">
+                                    <div class="inf-lable__wave">
+                                        <div class="inf-lable__plus">
+                                        </div>
+                                    </div>
+                                    <div class="inf-lable__text">Работаем с 2008г. </div>
+                                </a>
+                            </div>
+                            <div class="inf-lable__item">
+                                <a href="#" class="inf-lable__link">
+                                    <div class="inf-lable__wave">
+                                        <div class="inf-lable__plus">
+                                        </div>
+                                    </div>
+                                    <div class="inf-lable__text">Гарантия до 2-х лет</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="start__bot-text">Бесплатный выезд инженера-прораба на объект</div>
+
+
+
+                        <button class="start__button button">
+                            <span class="button__text">Заказать</span>
+                            <div class="button__waves"></div>
+                        </button>
+
+
+
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="request">
+            <div class='container'>
+                <h2 class="request__title title _anim-show ">Оставьте заявку и получите предварительную 
+                    смету уже сегодня</h2>
+                <form class="request__form form _anim-show" action="#" method="get" >
+                    <div class='form__my myinput'>
+                        <div class='myinput__placeholder'>
+                            Имя...
+                        </div>
+                        <input class='myinput__input form__name' type='text' name='' placeholder='' id='name1'/>
+                    </div>
+                    <div class='form__my myinput'>
+                        <div class='myinput__placeholder'>
+                            Телефон...
+                        </div>
+                        <input class='myinput__input form__phone' type='text' name='' placeholder='' id='name1'/>
+                    </div>
+                    <button class="form__button button">
+                        <span class="button__text">Получить смету</span>
+                        <div class="button__waves"></div>
+                    </button>
+                    <!-- <button class="form__button button" type="submit">Получить смету</button> -->
+                </form>
+                <div class="request__desc _anim-show">Оставляя заявку вы соглашаетесь с политикой конфиденциальности и обработкой персональных данных</div>
+            </div>
+        </div>
+
+        <div class="services">
+
+            <div class="services__bg ibg">
+                <img class="ibg__img" src="img/bg/serv.jpg" alt="">
+            </div>
+
+            <div class="services__content">
+                <div class='container'>
+                    <h2 class="services__title title _anim-show">Профессиональные услуги в сфере полов и напольных покрытий </h2>
+                    <h3 class="services__subtitle subtitle _anim-show">Ремонтные, монтажные и специализированные работы </h3>
+                    <div class="services__body _anim-show">
+                        <div class="services__row">
+                            <div class="services__column-left">
+    
+                                <div class="services__name-ser ser-name">
+                                    <div class="ser-name__title">
+                                        Профессиональная укладка финишных покрытий: 
+                                        линолиум и кровролин от <span>180 руб./м2</span>
+                                    </div>
+                                    <div class="ser-name__brack">
+                                    </div>                            
+                                </div>
+    
+                                <div class="services__name-ser ser-name">
+                                    <div class="ser-name__title">
+                                        Укладка ламината и паркета от <span>280 руб./м2</span>
+                                    </div>
+                                    <div class="ser-name__brack">
+                                    </div>                            
+                                </div>
+    
+                                <div class="services__name-ser ser-name">
+                                    <div class="ser-name__title">
+                                        Работа с деревянными полами от <span>180 руб./м2</span>
+    
+    
+                                    </div>
+                                    <div class="ser-name__brack">(защита, востановление, шлифовка, устранение скрипов, ремонт, 
+                                        выравнивание)
+                                    </div>                            
+                                </div>
+    
+                                <div class="services__name-ser ser-name">
+                                    <div class="ser-name__title">
+                                        Плиточные работы от <span>450 руб./м2</span>
+                                    </div>
+                                    <div class="ser-name__brack">
+                                    </div>                            
+                                </div>
+    
+                                <div class="services__name-ser ser-name">
+                                    <div class="ser-name__title">
+                                        Монтаж теплых полов от <span>690 руб./м2</span>
+                                    </div>
+                                    <div class="ser-name__brack">(водяные, электрические – инфракрасные и кабельные)
+                                    </div>                            
+                                </div>
+    
+                                <div class="services__name-ser ser-name">
+                                    <div class="ser-name__title">
+                                        Монтаж стяжки пола от <span>350 руб./м2</span>
+                                    </div>
+                                    <div class="ser-name__brack">(бетонная–мокрая смесь, полусухая–влажная смесь, сухая–влагостойкое 
+                                        гипсоволокнистые листы,наливная–самовыравнивающая смесь)
+                                    </div>                            
+                                </div>
+    
+                                <div class="services__name-ser ser-name">
+                                    <div class="ser-name__title">
+                                        Специализированые работы от <span>300 руб./м2</span>
+                                    </div>
+                                    <div class="ser-name__brack">(гидроизоляция, шумоизоляция, теплоизоляция)
+                                    </div>                            
+                                </div>
+    
+                                <div class="services__name-ser ser-name">
+                                    <div class="ser-name__title">
+                                        Монтаж промышленых полов от <span>490 руб./м2</span>
+                                    </div>
+                                    <div class="ser-name__brack">(бетонные, эпоксидные/полимерные–наливные, кварценаполненые–смолы 
+                                        с каменной крошкой, обеспыленые–обработка пропитками)
+                                    </div>                            
+                                </div>
+    
+                            </div>
+    
+                            <div class="services__column-right">
+    
+                                <div class="services__short-desc desc-short">
+                                    <div class="desc-short__title">Юридическая и финансовая 
+                                        защита от обманав</div>
+                                    <div class="desc-short__brack"></div>
+                                </div>
+    
+                                <div class="services__short-desc desc-short">
+                                    <div class="desc-short__title">Составление понятного договора</div>
+                                    <div class="desc-short__brack">Работаем без ''мелкого текста'' в договоре. 
+                                        В нашем договоре разберется даже ребенок!</div>
+                                </div>
+    
+                                <div class="services__short-desc desc-short">
+                                    <div class="desc-short__title">Гарантия на все работы </div>
+                                    <div class="desc-short__brack">Вы платите именно столько сколько указано 
+                                        в договоре</div>
+                                </div>
+    
+                                <div class="services__short-desc desc-short">
+                                    <div class="desc-short__title">Тщательное соблюдение сроков</div>
+                                    <div class="desc-short__brack">Все сроки прописаны в договоре. За каждый день
+                                        просрочки мы возвращаем % от стоимости работ</div>
+                                </div>
+    
+                                <div class="services__short-desc desc-short">
+                                    <div class="desc-short__title">Фиксированная стоимость</div>
+                                    <div class="desc-short__brack">Оплата работы за результат – после сдачи 
+                                        очередного этапа</div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__footer _anim-show">
+                        <button class="services__button button">Узнать точную стоимость работ</button>
+                        <button class="services__button button">Отпрвить свою смету на проверку</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="cards-companu ibg">
+            <img class="ibg__img" src="img/bg/card-serv.png" alt="">
+
+            <div class='container'>
+                <div class="cards-companu__title title _anim-show">Почему 4357 клиента выбрали нашу компанию</div>
+                <div class="cards-companu__column _anim-show">
+                    <div class="cards-companu__row">
+
+                        <div class="cards-companu__item-comp item-comp">
+                            <div class="item-comp__images">
+                                <img src="img/icons/lab_1.png" alt="1">
+                            </div>
+                            <div class="item-comp__text-col">
+                                <div class="item-comp__title">Высочайший
+                                    профессионализм</div>
+                                <div class="item-comp__desk">Гарантия на работы до 2 лет</div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="cards-companu__item-comp item-comp">
+                            <div class="item-comp__images">
+                                <img src="img/icons/lab_2.png" alt="1">
+                            </div>
+                            <div class="item-comp__text-col">
+                                <div class="item-comp__title">Контроль Качества</div>
+                                <div class="item-comp__desk">Предлагаем видеонаблюдение 
+                                    и фотоочеты</div>
+                            </div>
+                        </div>
+
+                        <div class="cards-companu__item-comp item-comp">
+                            <div class="item-comp__images">
+                                <img src="img/icons/lab_3.png" alt="1">
+                            </div>
+                            <div class="item-comp__text-col">
+                                <div class="item-comp__title">Только проверенные и 
+                                    качественные материалы</div>
+                                <div class="item-comp__desk">Если по итогам работ на обьекте 
+                                    остается не израсходованный 
+                                    материал,то мы сделаем перерасчет 
+                                    и вернем вам деньги за остатки</div>
+                            </div>
+                        </div>
+
+                        <div class="cards-companu__item-comp item-comp">
+                            <div class="item-comp__images">
+                                <img src="img/icons/lab_4.png" alt="1">
+                            </div>
+                            <div class="item-comp__text-col">
+                                <div class="item-comp__title">Гибкая система оплаты</div>
+                                <div class="item-comp__desk">Мы лояльно подходим к вариантам 
+                                    оплаты наших услуг. В зависимости 
+                                    от обьекта возможно выполнение работ
+                                    без предоплаты.Доступен наличный 
+                                    и безналичный расчет,рассрочка, 
+                                    кредит.</div>
+                            </div>
+                        </div>
+
+                        <div class="cards-companu__item-comp item-comp">
+                            <div class="item-comp__images">
+                                <img src="img/icons/lab_5.png" alt="1">
+                            </div>
+                            <div class="item-comp__text-col">
+                                <div class="item-comp__title">У вас будет чисто</div>
+                                <div class="item-comp__desk">Мы вывезем мусор и начисто уберем
+                                    территорию</div>
+                            </div>
+                        </div>
+
+                        <div class="cards-companu__item-comp item-comp">
+                            <div class="item-comp__images">
+                                <img src="img/icons/lab_6.png" alt="1">
+                            </div>
+                            <div class="item-comp__text-col">
+                                <div class="item-comp__title">Всё правильно на бумаге 
+                                    и на деле</div>
+                                <div class="item-comp__desk">Преддемонтажная уборка, демонтаж, 
+                                    доставка иподьем материала, 
+                                    монтажные работы, вывозмусора 
+                                    и финишная уборка – прописаны
+                                    в договоре без мелкого текста под
+                                    звездочками.</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+
+        </div>
+
+        <div class="worked">
+            <div class="worked__bg ibg">
+                <img class="ibg__img" src="img/bg/job.jpg" alt="">
+            </div>
+            <div class='container'>
+                <div class="worked__content">
+                    <h2 class="worked__title title _anim-show">Как проходит работа на наших обьектах</h2>
+                    
+                    <div class="worked__cord-zone _anim-show">
+                        <div class="worked__column">
+                            <div class="worked__row">
+
+                                <div class="worked__item-comp item-comp">
+                                    <div class="item-comp__images">
+                                        <img src="img/icons/job_1.png" alt="1">
+                                    </div>
+                                    <div class="item-comp__text-col">
+                                        <div class="item-comp__title">Звонок/заявка</div>
+                                        <div class="item-comp__desk">Мы уточняем информацию по работами
+                                            обьекту, делаем примерный расчет 
+                                            и назначаем замер.</div>
+                                    </div>
+                                </div>
+
+                                <div class="worked__item-comp item-comp">
+                                    <div class="item-comp__images">
+                                        <img src="img/icons/job_2.png" alt="1">
+                                    </div>
+                                    <div class="item-comp__text-col">
+                                        <div class="item-comp__title">Выезд на замер и консультацию</div>
+                                        <div class="item-comp__desk">Инженер–прораб бесплатно выезжает 
+                                            наобьект, производит замеры и осматривает 
+                                            помещение. Пог итогу состовляет 
+                                            смету работ.</div>
+                                    </div>
+                                </div>
+
+                                <div class="worked__item-comp item-comp">
+                                    <div class="item-comp__images">
+                                        <img src="img/icons/job_3.png" alt="1">
+                                    </div>
+                                    <div class="item-comp__text-col">
+                                        <div class="item-comp__title">Заключения договора</div>
+                                        <div class="item-comp__desk">Прописываем все условия 
+                                            и согласовываем смету на
+                                            работы и материалы</div>
+                                    </div>
+                                </div>
+
+                                <div class="worked__item-comp item-comp">
+                                    <div class="item-comp__images">
+                                        <img src="img/icons/job_4.png" alt="1">
+                                    </div>
+                                    <div class="item-comp__text-col">
+                                        <div class="item-comp__title">Выполнение работ</div>
+                                        <div class="item-comp__desk">Закупаем материалы, доставляем на
+                                            обьект, осуществляем работы по договору,
+                                            ведем отчетность перед заказчиком.</div>
+                                    </div>
+                                </div>
+
+                                <div class="worked__item-comp item-comp">
+                                    <div class="item-comp__images">
+                                        <img src="img/icons/job_5.png" alt="1">
+                                    </div>
+                                    <div class="item-comp__text-col">
+                                        <div class="item-comp__title">Сдача обьекта</div>
+                                        <div class="item-comp__desk">Прововнутренню проверку качества
+                                            выполненных работ. Вывозим строительный 
+                                            мусор и делаем финальную уборку.</div>
+                                    </div>
+                                </div>
+
+                                <div class="worked__item-comp item-comp">
+                                    <div class="item-comp__images">
+                                        <img src="img/icons/job_6.png" alt="1">
+                                    </div>
+                                    <div class="item-comp__text-col">
+                                        <div class="item-comp__title">Подписание документов</div>
+                                        <div class="item-comp__desk">Сдаем обьект заказчику 
+                                            и подписываем закрывающие 
+                                            документы</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    <div class="worked__present _anim-show">
+                        <div class="worked__pres">
+                            <img src="img/icons/present.png" alt="">
+                        </div>
+                        
+                        <div class="worked__present-inf inf-present">
+                            <h2 class="inf-present__title title">Ответьте на 5 вопросов</h2>
+                            <h3 class="inf-present__subtitle subtitle">И получай гарантированный подарок</h3>
+                            <button class="inf-present__button button">Ответить на вопросы</button>
+                            <div class="inf-present__desk">Работаем с частными
+                                и комерческими помещениями </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+        <div class="connect">
+            <div class="connect__bg ibg">
+                <img class="ibg__img" src="img/bg/connect_bg_f.png" alt="">
+
+                <!-- <img class="ibg__img" src="img/icons/mobil_b.png " alt=""> -->
+            </div>
+            
+            <div class="connect__content">
+                <div class='container'>
+                    <h2 class="connect__title title _anim-show">Свяжитесь с нами любым удобным способом</h2>
+                    <div class="connect__body ">
+                        <div class="connect__left-inf ">
+                            <a class="connect__phone phon-head">
+                                <div href="#" class="phon-head__tell">+7 (831) 415 - 41 - 84
+                                </div>
+                            </a>
+                            <ul class="connect__menu-inf inf-menu">
+                                <li>
+                                    <a href="#" class="inf-menu__link inf-menu__link_1">
+                                        Написать в Viber-чат
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inf-menu__link inf-menu__link_2">
+                                        Crisis.communic@mail.ru
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inf-menu__link inf-menu__link_3">
+                                        <address>Нижний Новгород. улица Петровского. д. 23</address> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inf-menu__link inf-menu__link_4">
+                                        Пн-пт.: 10:00–18:00
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="connect__copmany">
+                                Работы выполняет:
+                                ООО ''Кризисные коммуникации'' – строительные услуги
+                                ИНН5261068517 КПП 526101001 ОГРН 109526102099
+                            </div>
+                            
+                            <div class="connect__detal-link-box">
+                                <a href="#" class="connect__link-detal detal-link">Полные реквизиты</a>
+                                <a href="#" class="connect__link-detal detal-link">Политика конфидеециальности</a>
+                            </div>
+                            
+                            
+                            
+                            
+                        </div>
+                        <div class="connect__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac25d7a9a221981a86a13068161a27c358adc94c59b23b9db0b937829688c5bc7&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+
+
+
+            </div>
+
+            
+            
+        </div>
+
+        <footer class="footer">
+            <div class='container'>
+                <div class="footer__text">©2006 — 2019 ''Кризисные коммуникации'' – строительные услуги</div>
+            </div>
+        </footer>
+
+    </div>
+    
+    
+
+    
+
+    <script src="js/script.js"></script>
+    <!-- <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script> -->
+</body>
+</html>

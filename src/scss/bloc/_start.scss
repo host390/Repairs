@@ -1,0 +1,588 @@
+
+
+
+.start {
+    // padding-top: 292px;
+    padding: 292px 0px 289px 0px;
+    position: relative;
+    // min-height: 987px;
+    &__bg {
+    }
+
+    &__main-inf {
+        position: relative;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+        max-width: 630px;
+    }
+
+    &__top {
+        position: relative;
+        margin-bottom: 31px;
+        &::after {  
+            content: '';
+            width: 142px;
+            height: 6px;
+            border-radius: 3px;
+            background-color: #5582ea;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    &__title {
+        color: #5482ea;
+        font-family: "PF Din Display Pro";
+        font-size: 46px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 26px;
+
+
+        transform: translate(0px, 120%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform-origin: center;
+        opacity: 0;
+        transition: all 0.5s ease-in-out 0s;
+        &._active-show {
+            transform: translate(0px, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            opacity: 1;
+        }
+    }
+
+    &__subtitle {
+        color: #323030;
+        font-family: "Avenir Next Cyr";
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 26px;
+
+        transform: translate(0px, 120%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform-origin: center;
+        opacity: 0;
+        transition: all 0.5s ease-in-out 0.2s;
+        &._active-show {
+            transform: translate(0px, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            opacity: 1;
+        }
+    }
+
+    &__bottom {
+        transform: translate(0px, 120%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform-origin: center;
+        opacity: 0;
+        transition: all 0.5s ease-in-out 0s;
+        &._active-show {
+            transform: translate(0px, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            opacity: 1;
+        }
+    }
+
+    &__lable-inf {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 0px 6px 0px;
+        padding: 0px 40px 0px 0px;
+    }
+
+    &__bot-text {
+        opacity: 0.89;
+        color: #323030;
+        font-family: "Avenir Next Cyr";
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 22px;
+    }
+
+    &__button {
+        // border-radius: 0 0 10px 10px;
+        // transition: all 0.8s ease 0s;
+        // position: relative;
+        // background-color: #835fec;
+        // overflow: hidden;
+        width: 278px;
+        min-height: 69px;
+
+        // &:hover {
+        //     .button__waves {
+        //         top: -80%;
+        //         transition: all 0.8s ease-in-out 0s;
+        //     }
+        // }
+        // .button__text {
+        //     z-index: 1;
+        //     position: relative;
+        // }
+
+
+
+        .button__waves {
+            // transition: all 0.8s ease-in-out 0s;
+            // position: absolute;
+            // width: 280px;
+            // height: 280px;
+            // background-color: red;
+            // box-shadow: inset 0px 0px 50px 0px rgba($color: #000000, $alpha: .5);
+            // top: 0;
+            // left: 0;
+            // background-color: #835fec;
+
+            // &::after {  
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 50%;
+            //     width: 250%;
+            //     height: 250%;
+            //     transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            //     transform-origin: center;
+
+            //     background-color: rgba(131, 95, 236, 0.5);
+            //     border-radius: 44%;
+            //     animation:	waves 10s linear infinite normal running 0s forwards;
+            // }
+            // &::before {  
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 50%;
+            //     width: 250%;
+            //     height: 250%;
+            //     transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            //     transform-origin: center;
+            //     background-color: rgb(100, 68, 196);
+            //     border-radius: 48%;
+            //     animation:	waves 5s linear infinite normal running 0s forwards;
+            // } 
+        }
+    }
+
+
+    &__exemple {
+        position: absolute;
+        top: 0;
+        left: 470px;
+        width: 100%;
+        transform: translate(130%, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform-origin: center;
+        opacity: 0;
+        transition: all 0.5s ease-in-out 0s;
+        &._active-show{
+            transform: translate(0px, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes waves {
+    0% {
+        transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+    }
+    50% {
+    }
+    100% {
+        transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1, 1) skew(0deg, 0deg);
+    }
+}
+
+.inf-lable {
+
+    &__link {
+        display: flex;
+
+        &:hover {
+            .inf-lable__plus {
+                animation:	wavPlus 1s linear infinite normal running 0s forwards;
+                &::after {
+                    transform: translate(-50%, -50%) rotate(90deg) scale(1, 1) skew(0deg, 0deg);
+                }
+                &::before {
+                    transform: translate(-50%, -50%) rotate(90deg) scale(1, 1) skew(0deg, 0deg);
+                }
+            }
+
+            .inf-lable__wave::after {
+                animation:	wavAft 1s linear infinite normal running 1s forwards;
+            }
+
+            .inf-lable__text {
+                text-decoration: underline;
+            }
+        } 
+    }
+    &__item {
+        flex: 0 1 50%;
+        margin: 0px 0px 20px 0px;
+        display: flex;
+        // align-items: center;
+
+        
+    }
+
+    &__wave {
+        min-width: 34px;
+        height: 34px;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        border-radius: 50%;
+
+        margin: -8px 18px 0px 0px;
+        &::after {  
+            content: '';
+            background-color: #f8db97;
+            border-radius: 50%;
+            min-width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%, -50%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            transform-origin: center;
+        }
+        &::before {  
+            content: '';
+            background-color: #f1dbb6;
+            border-radius: 50%;
+            min-width: 34px;
+            height: 34px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transform: translate(-50%, -50%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            transform-origin: center;
+        }
+    }
+
+    @keyframes wavAft {
+        0% {
+            background-color: #f8db97;
+            min-width: 24px;
+            height: 24px;
+        }
+        100% {
+            min-width: 34px;
+            height: 34px;
+            background-color: #f1dbb6;
+        }
+    }
+    @keyframes wavPlus {
+        0% {
+            background-color: #ffc755;
+            min-width: 14px;
+            height: 14px;
+        }
+        100% {
+            min-width: 24px;
+            height: 24px;
+            background-color: #f1dbb6;
+        }
+    }
+
+    &__plus {
+        min-width: 14px;
+        height: 14px;
+        background-color: #ffc755;
+        
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        z-index: 4;
+        transform: translate(-50%, -50%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform-origin: center;
+        
+        // box-shadow: 0px 0px 8px 4px #ffc755;
+        position: absolute;
+        &::after {  
+            content: '';
+            width: 2px;
+            height: 8px;
+            background-color: #fff;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            transform-origin: center;
+            top: 50%;
+            transition: all 0.2s ease-in-out 0s;
+        }
+        &::before {  
+            content: '';
+            width: 8px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            transform-origin: center;
+            top: 50%;
+            transition: all 0.2s ease-in-out 0s;
+        }
+    }
+
+    &__text {
+        color: #323030;
+        font-family: "Avenir Next Cyr";
+        font-size: 18px;
+        font-weight: 400;
+        
+    }
+}
+
+@media (max-width: 1150px) {
+    .start {
+        padding: 292px 0px 289px 0px;
+    }
+}
+
+@media (max-width: 830px) {
+    .start {
+        padding: 185px 0px 40px 0px;
+		&__main-inf {
+            margin: 0px auto 0px auto;
+		}
+
+		&__exemple {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-bottom: 30px;
+            img {
+                max-width: 100%;
+            }
+		}
+
+		&__top {
+		}
+
+		&__title {
+            font-size: 43px;
+            padding-bottom: 15px;
+		}
+
+		&__subtitle {
+            font-size: 23px;
+		}
+
+		&__bottom {
+            min-height: 50px;
+            width: 183px;
+		}
+
+		&__lable-inf {
+		}
+
+		&__bot-text {
+		}
+
+		&__button {
+		}
+    }
+
+    .inf-lable {
+
+            &__item {
+            }
+
+            &__plus {
+            }
+
+            &__text {
+            }
+    }
+
+}
+
+@media (max-width: 730px) {
+    .start {
+        padding-top: 185px;
+
+		&__main-inf {
+            margin: 0px auto 0px auto;
+		}
+
+		&__exemple {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-bottom: 30px;
+            img {
+                max-width: 100%;
+            }
+		}
+
+		&__top {
+            margin-bottom: 28px;
+		}
+
+		&__title {
+            font-size: 39px;
+            padding-bottom: 13px;
+		}
+
+		&__subtitle {
+            font-size: 19px;
+            margin-bottom: 23px;
+		}
+
+		&__bottom {
+		}
+
+		&__lable-inf {
+            padding: 0;
+		}
+
+		&__bot-text {
+            font-size: 18px;
+		}
+
+		&__button {
+		}
+    }
+
+    .inf-lable {
+
+        &__item {
+        }
+
+        &__plus {
+        }
+
+        &__text {
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .start {
+        padding-top: 185px;
+		&__main-inf {
+            margin: 0px auto 0px auto;
+		}
+
+		&__exemple {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-bottom: 25px;
+            img {
+                max-width: 100%;
+            }
+		}
+
+		&__top {
+            margin-bottom: 24px;
+		}
+
+		&__title {
+            font-size: 34px;
+            padding-bottom: 11px;
+		}
+
+		&__subtitle {
+            font-size: 17px;
+            margin-bottom: 20px;
+		}
+
+		&__bottom {
+		}
+
+		&__lable-inf {
+            padding: 0;
+		}
+
+		&__bot-text {
+            font-size: 17px;
+		}
+
+		&__button {
+		}
+    }
+
+    .inf-lable {
+
+        &__item {
+            flex: 0 1 100%;
+        }
+
+        &__plus {
+        }
+
+        &__text {
+        }
+    }
+}
+
+
+// @media (max-width: 730px) {
+//     .start {
+//         padding: 185px 0px;
+// 		&__main-inf {
+//             margin: 0px auto 0px auto;
+// 		}
+
+// 		&__exemple {
+//             position: relative;
+//             top: 0;
+//             left: 0;
+//             margin-bottom: 30px;
+//             img {
+//                 max-width: 100%;
+//             }
+// 		}
+
+// 		&__top {
+//             text-align: center;
+//             &::after {  
+//                 content: '';
+//                 left: 50%;
+//                 transform: translate(-50%, 0px) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+//                 transform-origin: center;
+//             }
+// 		}
+
+// 		&__title {
+//             font-size: 43px;
+//             padding-bottom: 15px;
+// 		}
+
+// 		&__subtitle {
+//             font-size: 23px;
+// 		}
+
+// 		&__bottom {
+//             text-align: center;
+// 		}
+
+// 		&__lable-inf {
+// 		}
+
+// 		&__bot-text {
+// 		}
+
+// 		&__button {
+// 		}
+//     }
+
+//     .inf-lable {
+
+//             &__item {
+//             }
+
+//             &__plus {
+//             }
+
+//             &__text {
+//             }
+//     }
+// }
+
+
+@media (max-width: 400px) {
+    .start {
+        padding-top: 270px;
+    }
+}

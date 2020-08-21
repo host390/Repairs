@@ -1,0 +1,488 @@
+
+
+
+.worked {
+    padding: 0px 0px 60px 0px;
+    position: relative;
+    &__bg {
+        position: absolute;
+        bottom: -362px;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        z-index: 1;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        max-width: 900px;
+        margin: 0px auto 0px auto;
+        text-align: center;
+        padding: 65px 0px 80px 0;
+    }
+
+    &__cord-zone {
+
+    }
+
+    &__column {
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -50px;
+    }
+
+    &__item-comp {
+        flex: 0 1 33.33333%;
+        padding: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+        .item-comp__images {
+            height: 130px;
+            position: relative;
+            height: 130px;
+
+            img {
+                max-width: 100%;
+                max-width: 100%;
+                position: absolute;
+                bottom: 12px;
+            }
+        }
+    }
+
+    &__present {
+        position: relative;
+        min-height: 508px;
+    }
+
+    &__pres {
+        position: absolute;
+        top: 59px;
+        left: 455px;
+        width: 736px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__present-inf {
+        max-width: 459px;
+        padding: 120px 0px 0px 0px;
+    }
+}
+
+.inf-present {
+
+    &__title {
+        margin-bottom: 11px;
+    }
+
+    &__subtitle {
+        margin-bottom: 46px;
+    }
+
+    &__button {
+        width: 371px;
+        min-height: 69px;
+        margin-bottom: 50px;
+    }
+
+    &__desk {
+        color: #000000;
+        font-family: "Avenir Next Cyr";
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
+@media (max-width: 1060px) {
+    
+
+    .worked {
+
+        &__bg {
+        }
+
+        &__content {
+        }
+
+        &__title {
+        }
+
+        &__cord-zone {
+        }
+
+        &__column {
+        }
+
+        &__row {
+            margin: 0 -25px;
+        }
+
+        &__item-comp {
+            padding: 0px 25px;
+        }
+
+        &__present {
+        }
+
+        &__pres {
+            left: 394px;
+        }
+
+        &__present-inf {
+        }
+    }
+
+    .item-comp {
+
+        &__images {
+        }
+
+        &__text-col {
+        }
+
+        &__title {
+        }
+
+        &__desk {
+        }
+    }
+    .inf-present {
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+
+        &__button {
+        }
+
+        &__desk {
+        }
+    }
+
+}
+
+@media (max-width: 930px) {
+    
+
+    .worked {
+
+        &__bg {
+        }
+
+        &__content {
+        }
+
+        &__title {
+            padding: 0px 0px 70px 0;
+        }
+
+        &__cord-zone {
+        }
+
+        &__column {
+        }
+
+        &__row {
+            margin: 0 -25px;
+            justify-content: center;
+        }
+
+        &__item-comp {
+            padding: 0px 25px;
+            flex: 0 1 50%;
+            max-width: 400px;
+        }
+
+        &__present {
+        }
+
+        &__pres {
+            left: 394px;
+        }
+
+        &__present-inf {
+        }
+    }
+
+    .item-comp {
+
+        &__images {
+        }
+
+        &__text-col {
+        }
+
+        &__title {
+        }
+
+        &__desk {
+        }
+    }
+    .inf-present {
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+
+        &__button {
+        }
+
+        &__desk {
+        }
+    }
+
+}
+
+@media (max-width: 830px) {
+    
+
+    .worked {
+
+        &__bg {
+        }
+
+        &__content {
+        }
+
+        &__title {
+        }
+
+        &__cord-zone {
+        }
+
+        &__column {
+        }
+
+        &__row {
+            margin: 0 -25px;
+            justify-content: center;
+        }
+
+        &__item-comp {
+            padding: 0px 25px;
+            flex: 0 1 50%;
+            max-width: 400px;
+        }
+
+        &__present {
+        }
+
+        &__pres {
+            position: relative;
+            left: 0px;
+            top: 0;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &__present-inf {
+            padding: 0px 0px 0px 0;
+        }
+    }
+
+    .item-comp {
+
+        &__images {
+        }
+
+        &__text-col {
+        }
+
+        &__title {
+        }
+
+        &__desk {
+        }
+    }
+    .inf-present {
+
+        &__title {
+            margin-bottom: 8px;
+        }
+
+        &__subtitle {
+            margin-bottom: 35px;
+        }   
+
+        &__button {
+            margin-bottom: 40px;
+        }
+
+        &__desk {
+        }
+    }
+
+}
+
+@media (max-width: 630px) {
+    
+
+    .worked {
+
+        &__bg {
+        }
+
+        &__content {
+        }
+
+        &__title {
+        }
+
+        &__cord-zone {
+        }
+
+        &__column {
+        }
+
+        &__row {
+            margin: 0 -25px;
+            justify-content: center;
+        }
+
+        &__item-comp {
+            padding: 0px 25px;
+            flex: 0 1 100%;
+            max-width: 400px;
+        }
+
+        &__present {
+        }
+
+        &__pres {
+            position: relative;
+            left: 0px;
+            top: 0;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &__present-inf {
+            padding: 0px 0px 0px 0;
+        }
+    }
+
+    .item-comp {
+
+        &__images {
+        }
+
+        &__text-col {
+        }
+
+        &__title {
+        }
+
+        &__desk {
+        }
+    }
+    .inf-present {
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+
+        &__button {
+            width: 300px;
+        }
+
+        &__desk {
+        }
+    }
+
+}
+
+@media (max-width: 400px) {
+    
+
+    .worked {
+
+        &__bg {
+        }
+
+        &__content {
+        }
+
+        &__title {
+        }
+
+        &__cord-zone {
+        }
+
+        &__column {
+        }
+
+        &__row {
+            margin: 0 -25px;
+            justify-content: center;
+        }
+
+        &__item-comp {
+            padding: 0px 25px;
+            flex: 0 1 100%;
+            max-width: 400px;
+        }
+
+        &__present {
+        }
+
+        &__pres {
+            position: relative;
+            left: 0px;
+            top: 0;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &__present-inf {
+            padding: 0px 0px 0px 0;
+        }
+    }
+
+    .item-comp {
+
+        &__images {
+        }
+
+        &__text-col {
+        }
+
+        &__title {
+        }
+
+        &__desk {
+        }
+    }
+    .inf-present {
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+
+        &__button {
+            width: 100%;
+        }
+
+        &__desk {
+        }
+    }
+
+}

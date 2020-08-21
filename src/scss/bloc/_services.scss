@@ -1,0 +1,297 @@
+
+
+.services {
+    padding-bottom: 120px;
+    position: relative;
+
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        z-index: 1;
+    }
+
+    &__title {
+        margin-bottom: 21px;
+    }
+
+    &__subtitle {
+        margin-bottom: 51px;
+    }
+
+    &__body {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 62px;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__column-left {
+        display: flex;
+        flex-direction: column;
+        padding-right: 90px;
+    }
+
+    &__name-ser {
+        max-width: 678px;
+        min-height: 81px;
+        border-radius: 41px;
+        background-color: #feedcb;
+        padding: 13px 50px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:last-child {
+            margin-bottom: 0;
+
+        }
+    }
+
+    &__column-right {
+        display: flex;
+        flex-direction: column;
+        padding: 23px 0px 0px 0px;
+    }
+
+    &__short-desc {
+        max-width: 403px;
+        padding: 0px 0px 21px 0px;
+        position: relative;
+        margin-bottom: 23px;
+        &::before {  
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            border-radius: 1px;
+            background-color: #000000;
+            opacity: 0.1;
+        }
+        &:last-child {
+            padding: 0px 0px 0px 0px;
+            margin: 0;
+            &::before {  
+                width: 0px;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+    }
+
+    &__button {
+        flex: 0 1 50%;
+        margin: 0px 30px 0px 0px;
+    }
+}
+
+.ser-name {
+
+    &__title {
+        color: #141414;
+        font-family: "Avenir Next Cyr";
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 3px;
+        line-height: 26px;
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__brack {
+        opacity: 0.8;
+        color: #141414;
+        font-family: "Avenir Next Cyr";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+}
+.desc-short {
+
+    &__title {
+        color: #000000;
+        font-family: "Avenir Next Cyr";
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        line-height: 26px;
+    }
+
+    &__brack {
+        color: #000000;
+        font-family: "Avenir Next Cyr";
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 1170px) {
+    .services {
+        padding-bottom: 110px;
+        &__bg {
+            position: absolute;
+            top: 140px;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            z-index: 1;
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    .services {
+        padding-bottom: 90px;
+		&__title {
+            margin: 0px 0px 18px 0px;
+		}
+
+		&__subtitle {
+            margin-bottom: 30px;
+		}
+
+		&__body {
+		}
+
+		&__row {
+            
+
+		}
+
+		&__column-left {
+            padding-right: 50px;
+            
+		}
+
+		&__name-ser {
+            padding: 12px 30px;
+            &:last-child {
+               
+            }
+		}
+
+		&__column-right {
+		}
+
+		&__short-desc {
+		}
+
+		&__footer {
+		}
+
+		&__button {
+		}
+    }
+
+
+    .ser-name {
+
+            &__title {
+
+            }
+
+            &__brack {
+            }
+    }
+
+    .desc-short {
+
+            &__title {
+            }
+
+            &__brack {
+            }
+    }
+}
+
+
+@media (max-width: 830px) {
+    .services {
+        padding-bottom: 0px;
+        &__bg {
+            position: absolute;
+            top: 226px;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            z-index: 1;
+        }
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__body {
+		}
+
+		&__row {
+            flex-direction: column;
+
+		}
+
+		&__column-left {
+            padding: 0;
+		}
+
+		&__name-ser {
+            &:last-child {
+                margin: 0px 0px 10px 0px;
+            }
+		}
+
+		&__column-right {
+		}
+
+		&__short-desc {
+		}
+
+		&__footer {
+            flex-wrap: wrap;
+		}
+
+		&__button {
+            flex: 0 1 100% ;
+            margin: 0px 0px 30px 0px;
+		}
+    }
+
+
+    .ser-name {
+
+        &__title {
+        }
+
+        &__brack {
+        }
+    }
+
+    .desc-short {
+
+        &__title {
+        }
+
+        &__brack {
+        }
+    }
+
+
+}

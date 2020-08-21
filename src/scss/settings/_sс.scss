@@ -1,0 +1,30 @@
+
+
+.ibg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &__img {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+    } 
+} 
+
+
+._anim-show {
+    transform: translate(0px, 120%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+    transform-origin: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+._anim-show._active-show {
+    transform: translate(0px, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+    opacity: 1;
+}

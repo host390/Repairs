@@ -1,0 +1,597 @@
+
+
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &__container {
+        max-width: 1235px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    &__row {
+        position: relative;
+        
+    }
+
+    &__column {
+        position: absolute;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+
+
+        transform: translate(0px, 120%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform-origin: center;
+        opacity: 0;
+        transition: all 0.7s ease-in-out 0s;
+        &._active-show {
+            transform: translate(0px, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            opacity: 1;
+        }
+    }
+
+    
+
+    // &__left {
+    //     display: flex;
+    // }
+
+    &__logo {
+        display: flex;
+    }
+
+    &__addres-text {
+        color: #323030;
+        font-family: "Avenir Next Cyr";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        max-width: 310px;
+        position: relative;
+        padding-left: 21px;
+        &::before {  
+            content: '';
+            width: 1px;
+            height: 42px;
+            background-color: #ffc755;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    // &__right {
+    //     display: flex;
+    // }
+
+    &__inf {
+        display: flex;
+        align-items: center;
+
+        
+        &_a {
+            margin-left: auto;
+        }
+    }
+
+    &__phone {
+    }
+}
+.logo {
+    padding-right: 28px;
+    &__img {
+        padding-right: 9px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__name {
+        color: #5b86eb;
+        font-family: "Avenir Next Cyr";
+        font-size: 22px;
+        font-weight: 700;
+    }
+}
+.inf-header {
+    cursor: pointer;
+    padding: 0px 40px 0px 0px;
+    
+    &__laible {
+        padding-right: 10px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__addres {
+        color: #323030;
+        font-family: "Avenir Next Cyr";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+}
+.phon-head {
+    text-align: right;
+    cursor: pointer;
+    &:hover {
+        .phon-head__order {
+            text-decoration: underline;
+        }
+    }
+    &__tell {
+        color: #5482ea;
+        font-family: "Uni Neue";
+        font-size: 22px;
+        font-weight: 900;
+        padding-bottom: 3px;
+    }
+
+    &__order {
+        color: #524e4b;
+        font-family: "Avenir Next Cyr";
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+// .header__column._active-show {
+//     // transition: all 0.5s ease 0s;
+//     transform: translate(0px, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+//     opacity: 1;
+// }
+
+// ._anim-show {
+//     transform: translate(0px, 120%) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+//     transform-origin: center;
+//     opacity: 0;
+//     transition: all 0.5s ease 0s;
+//     &_active {
+//         transition: all 0.5s ease 0s;
+//         transform: translate(0px, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+//         opacity: 1;
+//     }
+// }
+
+
+@media (max-width: 1150px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    
+    
+        &__row {
+            position: relative;
+            
+        }
+    
+        &__column {
+            position: absolute;
+            top: 56px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+    
+        // &__left {
+        //     display: flex;
+        // }
+    
+        &__logo {
+            display: flex;
+        }
+    
+        &__addres-text {
+            display: none;
+
+            color: #323030;
+            font-family: "Avenir Next Cyr";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+            max-width: 310px;
+            position: relative;
+            padding-left: 21px;
+            &::before {  
+                content: '';
+                width: 1px;
+                height: 42px;
+                background-color: #ffc755;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    
+        // &__right {
+        //     display: flex;
+        // }
+    
+        &__inf {
+            display: flex;
+            align-items: center;
+            
+        }
+    
+        &__phone {
+        }
+    }
+    .logo {
+        padding-right: 28px;
+        &__img {
+            padding-right: 9px;
+            img {
+                max-width: 100%;
+            }
+        }
+    
+        &__name {
+            color: #5b86eb;
+            font-family: "Avenir Next Cyr";
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+    .inf-header {
+        cursor: pointer;
+        padding: 0px 40px 0px 0px;
+
+        
+        &__laible {
+            padding-right: 10px;
+            img {
+                max-width: 100%;
+            }
+        }
+    
+        &__addres {
+            color: #323030;
+            font-family: "Avenir Next Cyr";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+    }
+    .phon-head {
+        text-align: right;
+        cursor: pointer;
+        
+        &__tell {
+            color: #5482ea;
+            font-family: "Uni Neue";
+            font-size: 22px;
+            font-weight: 900;
+            padding-bottom: 3px;
+        }
+    
+        &__order {
+            color: #524e4b;
+            font-family: "Avenir Next Cyr";
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    
+    
+        &__row {
+            position: relative;
+            
+        }
+    
+        &__column {
+            position: absolute;
+            top: 35px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+    
+        // &__left {
+        //     display: flex;
+        // }
+    
+        &__logo {
+            display: flex;
+        }
+    
+        &__addres-text {
+            display: none;
+
+            color: #323030;
+            font-family: "Avenir Next Cyr";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+            max-width: 310px;
+            position: relative;
+            padding-left: 21px;
+            &::before {  
+                content: '';
+                width: 1px;
+                height: 42px;
+                background-color: #ffc755;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    
+        &__inf {
+            display: flex;
+            align-items: center;
+            
+        }
+    
+        &__phone {
+        }
+    }
+    .logo {
+        padding-right: 20px;
+        &__img {
+            padding-right: 9px;
+            img {
+                max-width: 100%;
+            }
+        }
+    
+        &__name {
+            color: #5b86eb;
+            font-family: "Avenir Next Cyr";
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+    .inf-header {
+        cursor: pointer;
+        padding: 0px 22px 0px 0px;
+
+        
+        &__laible {
+            padding-right: 10px;
+            img {
+                max-width: 100%;
+            }
+        }
+    
+        &__addres {
+            color: #323030;
+            font-family: "Avenir Next Cyr";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+    }
+    .phon-head {
+        text-align: right;
+        cursor: pointer;
+        
+        &__tell {
+            color: #5482ea;
+            font-family: "Uni Neue";
+            font-size: 19px;
+            font-weight: 900;
+            padding-bottom: 3px;
+        }
+    
+        &__order {
+            color: #524e4b;
+            font-family: "Avenir Next Cyr";
+            font-size: 15px;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .header {
+
+		&__row {
+		}
+        &__container {
+            padding: 0px 90px;
+        }
+		&__column {
+		}
+
+		&__logo {
+		}
+
+		&__addres-text {
+		}
+
+		&__inf {
+            justify-content: flex-end;
+            padding: 20px 0px 0px 0px;
+			&_a {
+                justify-content: flex-start;
+			}
+		}
+
+		&__phone {
+		}
+    }
+    .logo {
+        flex: 0 1 50%;
+        &__img {
+        }
+
+        &__name {
+        }
+    }
+    .inf-header {
+        flex: 0 1 50%;
+        order: 2;
+        &__laible {
+        }
+
+        &__addres {
+        }
+    }
+    .phon-head {
+        flex: 0 1 50%;
+        order: 1;
+        margin-left: auto;
+        &__tell {
+        }
+
+        &__order {
+        }
+    }
+
+}
+
+@media (max-width: 570px) {
+    .header {
+        &__container {
+            padding: 0px 15px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__logo {
+		}
+
+		&__addres-text {
+		}
+
+		&__inf {
+            justify-content: flex-end;
+            padding: 20px 0px 0px 0px;
+            margin: 0px 0 0px auto;
+			&_a {
+                justify-content: flex-start;
+                margin: 0px 0px 0px 0px;
+			}
+		}
+
+		&__phone {
+		}
+    }
+    .logo {
+        flex: 0 1 auto;
+        &__img {
+        }
+
+        &__name {
+        }
+    }
+    .inf-header {
+        flex: 0 1 auto;
+        order: 2;
+        &__laible {
+        }
+
+        &__addres {
+        }
+    }
+    .phon-head {
+        flex: 0 1 auto;
+        order: 1;
+        margin-left: auto;
+        &__tell {
+        }
+
+        &__order {
+        }
+    }
+
+}
+
+@media (max-width: 400px) {
+    .header {
+
+		&__row {
+		}
+
+		&__column {
+            flex-direction: column;
+            align-items: center;
+		}
+
+		&__logo {
+            padding: 0;
+            margin: 0px 0px 15px 0px;
+		}
+
+		&__addres-text {
+		}
+
+		&__inf {
+            justify-content: flex-end;
+            padding: 0 0px 15px 0px;
+            margin: 0px 0 0px 0;
+			&_a {
+                justify-content: flex-start;
+                margin: 0px 0px 0px 0px;
+			}
+		}
+
+		&__phone {
+		}
+    }
+    .logo {
+        flex: 0 1 auto;
+        &__img {
+        }
+
+        &__name {
+        }
+    }
+    .inf-header {
+        flex: 0 1 auto;
+        order: 2;
+        &__laible {
+        }
+
+        &__addres {
+        }
+    }
+    .phon-head {
+        text-align: center;
+        flex: 0 1 auto;
+        order: 1;
+        margin-left: 0;
+        margin-bottom: 15px;
+        &__tell {
+        }
+
+        &__order {
+        }
+    }
+
+}

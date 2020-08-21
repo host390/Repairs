@@ -1,0 +1,106 @@
+
+
+
+
+
+.button {
+    
+    padding: 24px 10px;
+    box-shadow: 0 11px 27px rgba(131, 95, 236, 0.67);
+    border-radius: 35px;
+    background-color: #835fec;
+    color: #ffffff;
+    font-family: "Avenir Next Cyr";
+    font-size: 25px;
+    font-weight: 700;
+
+    transition: all 0.8s ease 0s;
+    position: relative;
+    background-color: #835fec;
+    overflow: hidden;
+
+    &__text {
+        z-index: 2;
+        position: relative;
+    }
+
+    &__waves {
+        transition: all 0.8s ease-in-out 0s;
+        position: absolute;
+        width: 100%;
+        height: 400%;
+        box-shadow: inset 0px 0px 50px 0px rgba($color: #000000, $alpha: .5);
+        // top: 0;
+        left: 0;
+        bottom: -300%;
+        background-color: #835fec;
+        &::after {  
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 250%;
+            height: 250%;
+            transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            transform-origin: center;
+            background-color: rgba(131, 95, 236, 0.5);
+            border-radius: 44%;
+            animation:	waves 10s linear infinite normal running 0s forwards;
+        }
+        &::before {  
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 250%;
+            height: 250%;
+            transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            transform-origin: center;
+            background-color: rgb(100, 68, 196);
+            border-radius: 48%;
+            animation:	waves 5s linear infinite normal running 0s forwards;
+        }
+    }  
+
+
+    //  ДЩДЕЛАТЬ И СДЕЛАТЬ НАВЕРНО КЛАССЫ ДЛЯ ТАКОЙ АНИМАЦИИ И СДЕЛАТЬ СНИППЕР!!!!
+
+
+    &:hover {
+        .button__waves {
+            bottom: -100%;
+            transition: all 0.8s ease-in-out 0s;
+            
+        }
+        
+    }
+    
+    @media (max-width: 830px) {
+        
+
+        padding: 13px 10px;
+        box-shadow: 0 11px 27px rgba(131,95,236,0.67);
+        border-radius: 35px;
+        background-color: #835fec;
+        color: #ffffff;
+        font-family: "Avenir Next Cyr";
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+
+
+}
+
+
+
+@keyframes waves {
+    0% {
+        transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+    }
+    50% {
+    }
+    100% {
+        transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1, 1) skew(0deg, 0deg);
+    }
+}

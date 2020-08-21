@@ -1,0 +1,39 @@
+
+
+
+.title {
+    color: #606265;
+    font-family: "PF Din Display Pro";
+    font-size: 40px;
+    font-weight: 500;
+    @media (max-width: 1150px) {
+        font-size: 38px;
+    }
+    @media (max-width: 1020px) {
+        font-size: 34px;
+    }
+    @media (max-width: 830px) {
+        font-size: 28px;
+    }
+    @media (max-width: 600px) {
+        font-size: 26px;
+    }
+    @media (max-width: 400px) {
+        font-size: 24px;
+    }
+}
+
+.subtitle {
+    color: #141414;
+    font-family: "Avenir Next Cyr";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+// @media (max-width: px) {
+    
+// }
+
+

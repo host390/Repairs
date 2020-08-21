@@ -1,0 +1,17 @@
+
+
+.footer {
+    padding: 22px 0px;
+    background-color: #6089eb;
+    opacity: 0.8;
+    position: relative;
+    z-index: 2;
+    &__text {
+        color: #ffffff;
+        font-family: "Avenir Next Cyr";
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+

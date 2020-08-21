@@ -1,0 +1,113 @@
+
+
+// font-display зачем нужен??????
+
+/*
+    thin - 100
+    UltraLite - 200 
+    lite - 300
+    normal - 400 
+    medium - 500 
+    semibold - 600 
+    Bold - 700 
+    Heavy - 800 
+    Black - 900 
+*/
+
+
+@font-face {
+    font-family: 'PF Din Display Pro';
+    src: url('../fonts/PFDinDisplayPro-Bold.woff2') format('woff2'),
+        url('../fonts/PFDinDisplayPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF Din Display Pro';
+    src: url('../fonts/PFDinDisplayPro-Black.woff2') format('woff2'),
+        url('../fonts/PFDinDisplayPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF Din Display Pro';
+    src: url('../fonts/PFDinDisplayPro-Medium.woff2') format('woff2'),
+        url('../fonts/PFDinDisplayPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('../fonts/AvenirNextCyr-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url('../fonts/Acrom-Bold.woff2') format('woff2'),
+        url('../fonts/Acrom-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Bold.woff2') format('woff2'),
+        url('../fonts/AvenirNextCyr-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Medium.woff2') format('woff2'),
+        url('../fonts/AvenirNextCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url('../fonts/Acrom-Regular.woff2') format('woff2'),
+        url('../fonts/Acrom-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr   ';
+    src: url('../fonts/AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+        url('../fonts/AvenirNextCyr-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uni Neue';
+    src: url('../fonts/UniNeueBlack.woff2') format('woff2'),
+        url('../fonts/UniNeueBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+

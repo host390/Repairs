@@ -1,0 +1,264 @@
+
+
+
+.request {
+    padding: 67px 0 116px 0;
+    &__title {
+        max-width: 800px;
+        margin-bottom: 43px;
+    }
+    &__desc {
+        color: #141414;
+        font-family: "Avenir Next Cyr";
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__form {
+        margin-bottom: 30px;
+        display: flex;
+        .form__button {
+            width: 367px;
+        }
+    }
+}
+
+.form {
+    input {
+        border-radius: 35px;
+        border: 2px solid #835fec;  
+        // background-color: #ffffff;
+        color: #323030;
+        font-family: "Avenir Next Cyr";
+        font-size: 18px;
+        font-weight: 400;
+        padding: 25px 32px 25px 32px;
+
+        width: 100%;
+    }
+    &__name {
+    }
+
+    &__phone {
+    }
+
+    &__button {
+        .button__waves {
+            
+        }
+    }
+
+    &__my {
+        width: 371px;
+        margin-right: 30px;
+    }
+}
+
+.myinput {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    &__placeholder {
+        text-align: left;
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+        
+
+        color: #323030;
+        font-family: "Avenir Next Cyr";
+        font-size: 18px;
+        font-weight: 400;
+        padding: 25px 32px 25px 32px;
+    }
+
+    &__input {
+        position: relative;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 1020px) {
+    .request {
+        padding: 0px 0 70px 0;
+    }
+}
+
+@media (max-width: 830px) {
+    .request {
+        padding: 40px 0 70px 0;
+		&__title {
+            margin: 0px 0px 35px 0px;
+		}
+
+		&__form {
+            .form__button {
+                min-height: 69px;
+            }
+		}
+
+		&__desc {
+		}
+    }
+
+    .form {
+        flex-direction: column;
+        &__my {
+            margin: 0px 0px 25px 0px;
+        }
+
+        &__name {
+        }
+
+        &__phone {
+        }
+
+        &__button {
+        }
+    }
+
+    .myinput {
+
+            &__placeholder {
+            }
+
+            &__input {
+            }
+    }
+}
+
+@media (max-width: 400px) {
+    .request {
+        padding: 30px 0 50px 0;
+		&__title {
+            margin: 0px 0px 30px 0px;
+		}
+
+		&__form {
+            .form__button {
+                min-height: 69px;
+                width: 100%;
+            }
+		}
+
+		&__desc {
+		}
+    }
+
+    .form {
+        flex-direction: column;
+        &__my {
+            margin: 0px 0px 25px 0px;
+            width: 100%;
+        }
+
+        &__name {
+        }
+
+        &__phone {
+        }
+
+        &__button {
+        }
+    }
+
+    .myinput {
+
+            &__placeholder {
+            }
+
+            &__input {
+            }
+    }
+}
+
+// @media (max-width: 1150px) {
+//     .request {
+
+// 		&__title {
+// 		}
+
+// 		&__form {
+//             .form__button {
+//                 width: 300px;
+//             }
+// 		}
+
+// 		&__desc {
+// 		}
+//     }
+//     .form {
+//         input {
+//             width: 300px;
+//             margin-right: 25px;
+//         }
+//         &__name {
+//         }
+
+//         &__phone {
+//         }
+
+//         &__button {
+//         }
+//     }
+//     .myinput {
+
+//         &__placeholder {
+//         }
+
+//         &__input {
+//         }
+//     }
+
+// }
+
+// @media (max-width: 960px) {
+//     .request {
+
+// 		&__title {
+// 		}
+
+// 		&__form {
+//             flex-direction: column;
+//             .form__button {
+//                 width: 371px;
+//             }
+// 		}
+
+// 		&__desc {
+// 		}
+//     }
+//     .form {
+//         input {
+//             width: 371px;
+//             margin-right: 0px;
+//         }
+//         &__name {
+//         }
+
+//         &__phone {
+//         }
+
+//         &__button {
+//         }
+
+//         &__my {
+
+//         }
+//     }
+//     .myinput {
+
+//         &__placeholder {
+//         }
+
+//         &__input {
+//         }
+//     }
+
+// }
